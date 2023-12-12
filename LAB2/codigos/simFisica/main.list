@@ -1,0 +1,317 @@
+
+main.elf:     file format elf64-littleaarch64
+
+
+Disassembly of section .text:
+
+0000000040080000 <inicializar-0x40>:
+    40080000:	d5381049 	mrs	x9, cpacr_el1
+    40080004:	d2a0060a 	mov	x10, #0x300000              	// #3145728
+    40080008:	aa0a0129 	orr	x9, x9, x10
+    4008000c:	d5181049 	msr	cpacr_el1, x9
+    40080010:	58000f40 	ldr	x0, 400801f8 <N>
+    40080014:	58000ea1 	ldr	x1, 400801e8 <print_inner+0x30>
+    40080018:	58000ec2 	ldr	x2, 400801f0 <print_inner+0x38>
+    4008001c:	58000f63 	ldr	x3, 40080208 <n_iter>
+    40080020:	58000f04 	ldr	x4, 40080200 <t_amb>
+    40080024:	58000f65 	ldr	x5, 40080210 <fc_x>
+    40080028:	58000f86 	ldr	x6, 40080218 <fc_y>
+    4008002c:	1c000fa7 	ldr	s7, 40080220 <fc_temp>
+    40080030:	d2800113 	mov	x19, #0x8                   	// #8
+    40080034:	9b007c0e 	mul	x14, x0, x0
+    40080038:	aa1f03ea 	mov	x10, xzr
+    4008003c:	9e220084 	scvtf	s4, x4
+
+0000000040080040 <inicializar>:
+    40080040:	eb0e015f 	cmp	x10, x14
+    40080044:	540000aa 	b.ge	40080058 <fin_inicializar>  // b.tcont
+    40080048:	9b137d52 	mul	x18, x10, x19
+    4008004c:	bc326824 	str	s4, [x1, x18]
+    40080050:	9100054a 	add	x10, x10, #0x1
+    40080054:	17fffffb 	b	40080040 <inicializar>
+
+0000000040080058 <fin_inicializar>:
+    40080058:	9b007caa 	mul	x10, x5, x0
+    4008005c:	8b06014a 	add	x10, x10, x6
+    40080060:	9b137d4a 	mul	x10, x10, x19
+    40080064:	bc2a6827 	str	s7, [x1, x10]
+    40080068:	d2800113 	mov	x19, #0x8                   	// #8
+    4008006c:	d280000a 	mov	x10, #0x0                   	// #0
+    40080070:	d2800094 	mov	x20, #0x4                   	// #4
+    40080074:	9e220282 	scvtf	s2, x20
+    40080078:	9e220084 	scvtf	s4, x4
+
+000000004008007c <main_2>:
+    4008007c:	d280000b 	mov	x11, #0x0                   	// #0
+
+0000000040080080 <i_loop>:
+    40080080:	d280000c 	mov	x12, #0x0                   	// #0
+
+0000000040080084 <j_loop>:
+    40080084:	9b007ca7 	mul	x7, x5, x0
+    40080088:	8b0600e7 	add	x7, x7, x6
+    4008008c:	9b007d68 	mul	x8, x11, x0
+    40080090:	8b0c0108 	add	x8, x8, x12
+    40080094:	eb0800ff 	cmp	x7, x8
+    40080098:	54000600 	b.eq	40080158 <not_outer_if>  // b.none
+    4008009c:	d2800014 	mov	x20, #0x0                   	// #0
+    400800a0:	9e220280 	scvtf	s0, x20
+    400800a4:	91000567 	add	x7, x11, #0x1
+    400800a8:	eb0000ff 	cmp	x7, x0
+    400800ac:	5400006b 	b.lt	400800b8 <if_1>  // b.tstop
+    400800b0:	1e242800 	fadd	s0, s0, s4
+    400800b4:	14000006 	b	400800cc <fin_if_1>
+
+00000000400800b8 <if_1>:
+    400800b8:	9b007ce7 	mul	x7, x7, x0
+    400800bc:	8b0c00e7 	add	x7, x7, x12
+    400800c0:	9b137ce7 	mul	x7, x7, x19
+    400800c4:	bc676821 	ldr	s1, [x1, x7]
+    400800c8:	1e212800 	fadd	s0, s0, s1
+
+00000000400800cc <fin_if_1>:
+    400800cc:	d1000567 	sub	x7, x11, #0x1
+    400800d0:	f10000ff 	cmp	x7, #0x0
+    400800d4:	5400006a 	b.ge	400800e0 <if_2>  // b.tcont
+    400800d8:	1e242800 	fadd	s0, s0, s4
+    400800dc:	14000006 	b	400800f4 <fin_if_2>
+
+00000000400800e0 <if_2>:
+    400800e0:	9b007ce7 	mul	x7, x7, x0
+    400800e4:	8b0c00e7 	add	x7, x7, x12
+    400800e8:	9b137ce7 	mul	x7, x7, x19
+    400800ec:	bc676821 	ldr	s1, [x1, x7]
+    400800f0:	1e212800 	fadd	s0, s0, s1
+
+00000000400800f4 <fin_if_2>:
+    400800f4:	91000587 	add	x7, x12, #0x1
+    400800f8:	eb0000ff 	cmp	x7, x0
+    400800fc:	5400006b 	b.lt	40080108 <if_3>  // b.tstop
+    40080100:	1e242800 	fadd	s0, s0, s4
+    40080104:	14000006 	b	4008011c <fin_if_3>
+
+0000000040080108 <if_3>:
+    40080108:	9b007d68 	mul	x8, x11, x0
+    4008010c:	8b070107 	add	x7, x8, x7
+    40080110:	9b137ce7 	mul	x7, x7, x19
+    40080114:	bc676821 	ldr	s1, [x1, x7]
+    40080118:	1e212800 	fadd	s0, s0, s1
+
+000000004008011c <fin_if_3>:
+    4008011c:	d1000587 	sub	x7, x12, #0x1
+    40080120:	f10000ff 	cmp	x7, #0x0
+    40080124:	5400006a 	b.ge	40080130 <if_4>  // b.tcont
+    40080128:	1e242800 	fadd	s0, s0, s4
+    4008012c:	14000006 	b	40080144 <fin_if_4>
+
+0000000040080130 <if_4>:
+    40080130:	9b007d68 	mul	x8, x11, x0
+    40080134:	8b070107 	add	x7, x8, x7
+    40080138:	9b137ce7 	mul	x7, x7, x19
+    4008013c:	bc676821 	ldr	s1, [x1, x7]
+    40080140:	1e212800 	fadd	s0, s0, s1
+
+0000000040080144 <fin_if_4>:
+    40080144:	9b007d67 	mul	x7, x11, x0
+    40080148:	8b0c00e7 	add	x7, x7, x12
+    4008014c:	9b137ce7 	mul	x7, x7, x19
+    40080150:	1e221800 	fdiv	s0, s0, s2
+    40080154:	bc276840 	str	s0, [x2, x7]
+
+0000000040080158 <not_outer_if>:
+    40080158:	9100058c 	add	x12, x12, #0x1
+    4008015c:	eb00019f 	cmp	x12, x0
+    40080160:	54fff92b 	b.lt	40080084 <j_loop>  // b.tstop
+    40080164:	9100056b 	add	x11, x11, #0x1
+    40080168:	eb00017f 	cmp	x11, x0
+    4008016c:	54fff8ab 	b.lt	40080080 <i_loop>  // b.tstop
+    40080170:	d280000d 	mov	x13, #0x0                   	// #0
+
+0000000040080174 <iter_loop>:
+    40080174:	9b007ca7 	mul	x7, x5, x0
+    40080178:	8b0600e7 	add	x7, x7, x6
+    4008017c:	eb0d00ff 	cmp	x7, x13
+    40080180:	54000080 	b.eq	40080190 <not_if>  // b.none
+    40080184:	9b137daf 	mul	x15, x13, x19
+    40080188:	bc6f6841 	ldr	s1, [x2, x15]
+    4008018c:	bc2f6821 	str	s1, [x1, x15]
+
+0000000040080190 <not_if>:
+    40080190:	910005ad 	add	x13, x13, #0x1
+    40080194:	eb0e01bf 	cmp	x13, x14
+    40080198:	54fffeeb 	b.lt	40080174 <iter_loop>  // b.tstop
+    4008019c:	9100054a 	add	x10, x10, #0x1
+    400801a0:	eb03015f 	cmp	x10, x3
+    400801a4:	54fff6cb 	b.lt	4008007c <main_2>  // b.tstop
+    400801a8:	aa1f03ea 	mov	x10, xzr
+    400801ac:	d280014d 	mov	x13, #0xa                   	// #10
+    400801b0:	d28002ae 	mov	x14, #0x15                  	// #21
+
+00000000400801b4 <print_outer>:
+    400801b4:	aa1f03eb 	mov	x11, xzr
+
+00000000400801b8 <print_inner>:
+    400801b8:	9b007d4c 	mul	x12, x10, x0
+    400801bc:	8b0b018c 	add	x12, x12, x11
+    400801c0:	d2800113 	mov	x19, #0x8                   	// #8
+    400801c4:	9b137d8c 	mul	x12, x12, x19
+    400801c8:	bc6c6820 	ldr	s0, [x1, x12]
+    400801cc:	9100056b 	add	x11, x11, #0x1
+    400801d0:	eb0d017f 	cmp	x11, x13
+    400801d4:	54ffff2b 	b.lt	400801b8 <print_inner>  // b.tstop
+    400801d8:	9100054a 	add	x10, x10, #0x1
+    400801dc:	eb0e015f 	cmp	x10, x14
+    400801e0:	54fffeab 	b.lt	400801b4 <print_outer>  // b.tstop
+    400801e4:	00000000 	udf	#0
+    400801e8:	40080224 	.inst	0x40080224 ; undefined
+    400801ec:	00000000 	udf	#0
+    400801f0:	40088224 	.inst	0x40088224 ; undefined
+    400801f4:	00000000 	udf	#0
+
+Disassembly of section .data:
+
+00000000400801f8 <N>:
+    400801f8:	00000040 	udf	#64
+    400801fc:	00000000 	udf	#0
+
+0000000040080200 <t_amb>:
+    40080200:	00000019 	udf	#25
+    40080204:	00000000 	udf	#0
+
+0000000040080208 <n_iter>:
+    40080208:	0000000a 	udf	#10
+    4008020c:	00000000 	udf	#0
+
+0000000040080210 <fc_x>:
+	...
+
+0000000040080218 <fc_y>:
+    40080218:	00000006 	udf	#6
+    4008021c:	00000000 	udf	#0
+
+0000000040080220 <fc_temp>:
+    40080220:	42d2999a 	.inst	0x42d2999a ; undefined
+
+Disassembly of section .bss:
+
+0000000040080224 <x>:
+	...
+
+0000000040088224 <x_temp>:
+	...
+
+Disassembly of section .debug_line:
+
+0000000000000000 <.debug_line>:
+   0:	000000ae 	udf	#174
+   4:	001d0003 	.inst	0x001d0003 ; undefined
+   8:	01040000 	.inst	0x01040000 ; undefined
+   c:	000d0efb 	.inst	0x000d0efb ; undefined
+  10:	01010101 	.inst	0x01010101 ; undefined
+  14:	01000000 	.inst	0x01000000 ; undefined
+  18:	00010000 	.inst	0x00010000 ; undefined
+  1c:	6e69616d 	rsubhn2	v13.8h, v11.4s, v9.4s
+  20:	0000732e 	udf	#29486
+  24:	00000000 	udf	#0
+  28:	00000209 	udf	#521
+  2c:	00004008 	udf	#16392
+  30:	15030000 	b	40c0030 <inicializar-0x3bfc0010>
+  34:	21212101 	.inst	0x21212101 ; undefined
+  38:	21212122 	.inst	0x21212122 ; undefined
+  3c:	21212221 	.inst	0x21212221 ; undefined
+  40:	21212122 	.inst	0x21212122 ; undefined
+  44:	21222122 	.inst	0x21222122 ; undefined
+  48:	21232121 	.inst	0x21232121 ; undefined
+  4c:	21262121 	.inst	0x21262121 ; undefined
+  50:	25212121 	.inst	0x25212121 ; undefined
+  54:	22212423 	.inst	0x22212423 ; undefined
+  58:	22212221 	.inst	0x22212221 ; undefined
+  5c:	21212421 	.inst	0x21212421 ; undefined
+  60:	21232121 	.inst	0x21232121 ; undefined
+  64:	24212121 	cmplo	p1.b, p0/z, z9.b, #4
+  68:	21212121 	.inst	0x21212121 ; undefined
+  6c:	21212123 	.inst	0x21212123 ; undefined
+  70:	21212421 	.inst	0x21212421 ; undefined
+  74:	21232121 	.inst	0x21232121 ; undefined
+  78:	24212121 	cmplo	p1.b, p0/z, z9.b, #4
+  7c:	21212121 	.inst	0x21212121 ; undefined
+  80:	21212123 	.inst	0x21212123 ; undefined
+  84:	21212621 	.inst	0x21212621 ; undefined
+  88:	21262122 	.inst	0x21262122 ; undefined
+  8c:	21212221 	.inst	0x21212221 ; undefined
+  90:	21212223 	.inst	0x21212223 ; undefined
+  94:	21212221 	.inst	0x21212221 ; undefined
+  98:	22212123 	.inst	0x22212123 ; undefined
+  9c:	21242121 	.inst	0x21242121 ; undefined
+  a0:	21222221 	.inst	0x21222221 ; undefined
+  a4:	21212121 	.inst	0x21212121 ; undefined
+  a8:	21212121 	.inst	0x21212121 ; undefined
+  ac:	00060221 	.inst	0x00060221 ; undefined
+  b0:	Address 0x00000000000000b0 is out of bounds.
+
+
+Disassembly of section .debug_info:
+
+0000000000000000 <.debug_info>:
+   0:	0000002a 	udf	#42
+   4:	00000002 	udf	#2
+   8:	01080000 	.inst	0x01080000 ; undefined
+   c:	00000000 	udf	#0
+  10:	40080000 	.inst	0x40080000 ; undefined
+  14:	00000000 	udf	#0
+  18:	400801f8 	.inst	0x400801f8 ; undefined
+	...
+  24:	00000007 	udf	#7
+  28:	00000055 	udf	#85
+  2c:	Address 0x000000000000002c is out of bounds.
+
+
+Disassembly of section .debug_abbrev:
+
+0000000000000000 <.debug_abbrev>:
+   0:	10001101 	adr	x1, 220 <inicializar-0x4007fe20>
+   4:	12011106 	and	w6, w8, #0x8000000f
+   8:	1b0e0301 	madd	w1, w24, w14, w0
+   c:	130e250e 	sbfiz	w14, w8, #18, #10
+  10:	00000005 	udf	#5
+
+Disassembly of section .debug_aranges:
+
+0000000000000000 <.debug_aranges>:
+   0:	0000002c 	udf	#44
+   4:	00000002 	udf	#2
+   8:	00080000 	.inst	0x00080000 ; undefined
+   c:	00000000 	udf	#0
+  10:	40080000 	.inst	0x40080000 ; undefined
+  14:	00000000 	udf	#0
+  18:	000001f8 	udf	#504
+	...
+
+Disassembly of section .debug_str:
+
+0000000000000000 <.debug_str>:
+   0:	6e69616d 	rsubhn2	v13.8h, v11.4s, v9.4s
+   4:	2f00732e 	.inst	0x2f00732e ; undefined
+   8:	656d6f68 	fnmls	z8.h, p3/m, z27.h, z13.h
+   c:	6972632f 	ldpsw	x15, x24, [x25, #-112]
+  10:	7a756d73 	.inst	0x7a756d73 ; undefined
+  14:	7365442f 	.inst	0x7365442f ; undefined
+  18:	706f746b 	adr	x11, deea7 <inicializar-0x3ffa1199>
+  1c:	74614d2f 	.inst	0x74614d2f ; undefined
+  20:	61697265 	.inst	0x61697265 ; undefined
+  24:	41332f73 	.inst	0x41332f73 ; undefined
+  28:	2f6f6e6e 	.inst	0x2f6f6e6e ; undefined
+  2c:	6d655332 	ldp	d18, d20, [x25, #-432]
+  30:	4364412f 	.inst	0x4364412f ; undefined
+  34:	62616c2f 	.inst	0x62616c2f ; undefined
+  38:	64612f32 	.inst	0x64612f32 ; undefined
+  3c:	616c2d63 	.inst	0x616c2d63 ; undefined
+  40:	632f3262 	.inst	0x632f3262 ; undefined
+  44:	6769646f 	.inst	0x6769646f ; undefined
+  48:	732f736f 	.inst	0x732f736f ; undefined
+  4c:	69466d69 	ldpsw	x9, x27, [x11, #48]
+  50:	61636973 	.inst	0x61636973 ; undefined
+  54:	554e4700 	.inst	0x554e4700 ; undefined
+  58:	20534120 	.inst	0x20534120 ; undefined
+  5c:	38332e32 	.inst	0x38332e32 ; undefined
+	...

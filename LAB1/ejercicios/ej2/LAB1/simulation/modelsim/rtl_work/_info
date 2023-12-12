@@ -1,0 +1,683 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1698534130
+!i10b 1
+!s100 a3zDN1NYD4EHE0kQDg6Iz2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IeLG5hFI=Rn5bc8^KKjkL73
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1565980540
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/adder.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/adder.sv
+!i122 22
+L0 3 7
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1698534130.000000
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/adder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1
+Z9 tCvgOpt 0
+valu
+R1
+R2
+!i10b 1
+!s100 X3:6>N=IF`B0m]Tmnc_Bi2
+R3
+I]Zn=FEKI200e0IG]2:l]j1
+R4
+S1
+R0
+w1697473005
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/alu.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/alu.sv
+!i122 21
+L0 3 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/alu.sv|
+!i113 1
+R7
+R8
+R9
+valudec
+R1
+R2
+!i10b 1
+!s100 Ifgn0gEV1DjHAR[m2W3e[3
+R3
+IEYizi^bP[JAPR^Z^lL[W:2
+R4
+S1
+R0
+w1697482382
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/aludec.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/aludec.sv
+!i122 20
+L0 3 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/aludec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/aludec.sv|
+!i113 1
+R7
+R8
+R9
+vcontroller
+R1
+R2
+!i10b 1
+!s100 1>F628iWGPaMBlXedi=3^0
+R3
+Iz`PI<C]d`m;MEZgV3Lo661
+R4
+S1
+R0
+w1697481445
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/controller.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/controller.sv
+!i122 19
+L0 3 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/controller.sv|
+!i113 1
+R7
+R8
+R9
+vdatapath
+R1
+R2
+!i10b 1
+!s100 ZIGQDlV?67kBC@OSd[VYi3
+R3
+IZAA^PXI@ka4>5i8GS3O:d0
+R4
+S1
+R0
+Z10 w1698533668
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/datapath.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/datapath.sv
+!i122 18
+L0 3 130
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/datapath.sv|
+!i113 1
+R7
+R8
+R9
+vdecode
+R1
+R2
+!i10b 1
+!s100 =gIDZ2YeeI]z9I7dP8M:]0
+R3
+I@W4mmz[VCF7Lc^J7^i;Q`3
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/decode.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/decode.sv
+!i122 17
+L0 3 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/decode.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/decode.sv|
+!i113 1
+R7
+R8
+R9
+Edmem
+Z11 w1697317267
+Z12 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z13 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z14 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z15 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z16 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 23
+R0
+Z17 8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/dmem.vhd
+Z18 F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/dmem.vhd
+l0
+L12 1
+Vbn3b0?2?3c<CA[;DdzR8^2
+!s100 9UhgcemjCI:F<bA>GRZY=0
+Z19 OV;C;2020.1;71
+33
+Z20 !s110 1698534131
+!i10b 1
+R6
+Z21 !s90 -reportprogress|300|-2008|-work|work|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/dmem.vhd|
+Z22 !s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/dmem.vhd|
+!i113 1
+Z23 o-2008 -work work
+Z24 tExplicit 1 CvgOpt 0
+Abehave
+R12
+R13
+R14
+R15
+R16
+DEx4 work 4 dmem 0 22 bn3b0?2?3c<CA[;DdzR8^2
+!i122 23
+l50
+L21 49
+V>@IOA`2<ka36]1Z41ac_Q0
+!s100 Og]K7;^V=YGiNIe?LjOL?0
+R19
+33
+R20
+!i10b 1
+R6
+R21
+R22
+!i113 1
+R23
+R24
+vexecute
+R1
+R2
+!i10b 1
+!s100 MQkI]mY?zS8YEUo_2^;gC2
+R3
+I6C9[DF8IEHjN43m[Z^6R:2
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/execute.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/execute.sv
+!i122 16
+L0 3 37
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/execute.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/execute.sv|
+!i113 1
+R7
+R8
+R9
+vfetch
+R1
+R2
+!i10b 1
+!s100 QG0VXXP`0h_MVX84XgfQe0
+R3
+ImOD=6kQ33]0m18Cb`N]EQ1
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/fetch.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/fetch.sv
+!i122 15
+L0 3 20
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/fetch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/fetch.sv|
+!i113 1
+R7
+R8
+R9
+vflopr
+R1
+R2
+!i10b 1
+!s100 AB:bP8UOO@XUPJjlf3UKm3
+R3
+ICBJ[N^14FFD66Ji<DASoQ3
+R4
+S1
+R0
+w1693158995
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/flopr.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/flopr.sv
+!i122 14
+L0 3 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/flopr.sv|
+!i113 1
+R7
+R8
+R9
+vflopr_e
+R1
+Z25 !s110 1698534129
+!i10b 1
+!s100 TBUeil0mgVjRF@c6JM]b02
+R3
+IUamQDKf=>M1SDPf^M:UeU1
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/flopr_e.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/flopr_e.sv
+!i122 0
+L0 1 10
+R5
+r1
+!s85 0
+31
+Z26 !s108 1698534129.000000
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/flopr_e.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/flopr_e.sv|
+!i113 1
+R7
+R8
+R9
+vforwarding
+R1
+R25
+!i10b 1
+!s100 zmzk2@UfV77A8T[RMn=NQ2
+R3
+Im>Wle2Ti]>gGh4hH16na>2
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/forwarding.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/forwarding.sv
+!i122 2
+L0 3 32
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/forwarding.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/forwarding.sv|
+!i113 1
+R7
+R8
+R9
+vhazard_detection
+R1
+R25
+!i10b 1
+!s100 MznI1A7aUHT2c8Cz9:;QZ1
+R3
+IalZbNlkI8hz9U@^]ZfQ`n2
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/hazard_detection.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/hazard_detection.sv
+!i122 3
+L0 3 19
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/hazard_detection.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/hazard_detection.sv|
+!i113 1
+R7
+R8
+R9
+vimem
+R1
+R2
+!i10b 1
+!s100 1FVR[6T<zJLUA]N>cgNl_3
+R3
+IU:B3Jn80GLo1QmH6aglT`1
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/imem.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/imem.sv
+!i122 13
+L0 3 83
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/imem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/imem.sv|
+!i113 1
+R7
+R8
+R9
+vmaindec
+R1
+R2
+!i10b 1
+!s100 S]V_YkzDWjXZd5Qe>RTRc2
+R3
+IWAYUZ=DWBFmhOZU7WW]4K1
+R4
+S1
+R0
+w1697481425
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/maindec.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/maindec.sv
+!i122 12
+L0 3 60
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/maindec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/maindec.sv|
+!i113 1
+R7
+R8
+R9
+vmem_forwarding
+R1
+R25
+!i10b 1
+!s100 e<:k0BAoCG509?=c>;UE32
+R3
+I?1RWV7^zX_nZ;<I5B;WiF1
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mem_forwarding.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mem_forwarding.sv
+!i122 1
+L0 3 13
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mem_forwarding.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mem_forwarding.sv|
+!i113 1
+R7
+R8
+R9
+vmemory
+R1
+R25
+!i10b 1
+!s100 LP[7i;OQNRmgDe[<ZEPcc0
+R3
+IAOOcNgVd:eNhRFA<e`[]l3
+R4
+S1
+R0
+w1693487124
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/memory.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/memory.sv
+!i122 5
+Z27 L0 3 6
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/memory.sv|
+!i113 1
+R7
+R8
+R9
+vmux2
+R1
+R2
+!i10b 1
+!s100 fI1Am19Zz4BR=Telh`>5<1
+R3
+Ik6fZ8;6m3N6kXCNJAJBfi1
+R4
+S1
+R0
+w1561401702
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mux2.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mux2.sv
+!i122 11
+R27
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mux2.sv|
+!i113 1
+R7
+R8
+R9
+vmux4
+R1
+R25
+!i10b 1
+!s100 ]3EG<=BV4N`hO_@Ro?QFz2
+R3
+ICL<5c[V@GHaSA91IObIP?3
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mux4.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mux4.sv
+!i122 4
+L0 1 7
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/mux4.sv|
+!i113 1
+R7
+R8
+R9
+vprocessor_arm
+R1
+R25
+!i10b 1
+!s100 APL]LOBC0o2gm>AME0g2A0
+R3
+I_cf^0VF`MoM[4eAzd>zzT0
+R4
+S1
+R0
+R10
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/processor_arm.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/processor_arm.sv
+!i122 10
+L0 3 66
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/processor_arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/processor_arm.sv|
+!i113 1
+R7
+R8
+R9
+vprocessor_tb
+R1
+R20
+!i10b 1
+!s100 YKLGQFn38]1zkDZfX@R;i3
+R3
+Idm;K9:KSMVU]n_c`^blN=0
+R4
+S1
+R0
+w1697489142
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/processor_tb.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/processor_tb.sv
+!i122 24
+L0 4 25
+R5
+r1
+!s85 0
+31
+!s108 1698534131.000000
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/processor_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/processor_tb.sv|
+!i113 1
+R7
+R8
+R9
+vregfile
+R1
+R25
+!i10b 1
+!s100 P1eLCb48a;<L_F771XT8l1
+R3
+I[zNX;kgK`f8`GD_U<C;;P2
+R4
+S1
+R0
+w1697333738
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/regfile.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/regfile.sv
+!i122 9
+L0 3 44
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/regfile.sv|
+!i113 1
+R7
+R8
+R9
+vsignext
+R1
+R25
+!i10b 1
+!s100 o5TR<IiH@@RTzIRaT?hPz3
+R3
+IAJMdf2a=@n`ddg1UMJ]dS2
+R4
+S1
+R0
+w1697482463
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/signext.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/signext.sv
+!i122 8
+L0 3 18
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/signext.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/signext.sv|
+!i113 1
+R7
+R8
+R9
+vsl2
+R1
+R25
+!i10b 1
+!s100 >OgOabIKM;BCEb3Z5Y<J<3
+R3
+I@8Ml;5ab_`l4;THTEQ4=b1
+R4
+S1
+R0
+w1565359374
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/sl2.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/sl2.sv
+!i122 7
+L0 3 9
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/sl2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/sl2.sv|
+!i113 1
+R7
+R8
+R9
+vwriteback
+R1
+R25
+!i10b 1
+!s100 lem0cZaoaK<4K2n`WO?nY2
+R3
+I2N4@@POmL5;<;<;@MIUaH3
+R4
+S1
+R0
+w1566830346
+8/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/writeback.sv
+F/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/writeback.sv
+!i122 6
+L0 3 8
+R5
+r1
+!s85 0
+31
+R26
+!s107 /home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/writeback.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1|/home/crismuz/Desktop/Materias/3Anno/2Sem/AdC/lab1/LAB1/writeback.sv|
+!i113 1
+R7
+R8
+R9

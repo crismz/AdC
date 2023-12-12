@@ -1,0 +1,3 @@
+// Hazard detection unit
+
+module hazard_detection ()
